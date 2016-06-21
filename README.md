@@ -1,2 +1,2 @@
-# C-
+# C Plus Plus
 C++ Playground
