@@ -25,11 +25,12 @@ Example 2:
 
 */
 
-void printarray(vector<int> arg, int length)
+void print(vector<int> numbers)
 {
+	int length = numbers.size();
 	for (int i = 0; i < length; i++)
 	{
-		cout << arg.at(i) << " ";
+		cout << numbers.at(i) << " ";
 	}
 
 	cout << "\n";
@@ -41,17 +42,17 @@ int main()
 	cin >> length >> sort_from >> sort_to;
 
 	vector<int> numbers;
-	int variable;
+	int number;
 
 	for (int i = 0; i < length; i++)
 	{
-		cin >> variable;
-		numbers.push_back(variable);
+		cin >> number;
+		numbers.push_back(number);
 	}
 
 	sort(numbers.begin() + sort_from, numbers.begin() + (sort_to + 1));
 
-	printarray(numbers, length);
-	
+	print(numbers);
+
 	return EXIT_SUCCESS;
 }
